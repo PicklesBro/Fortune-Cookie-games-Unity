@@ -147312,7 +147312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.6183045, y: 3.4871671, z: -10}
+  m_LocalPosition: {x: -0.11, y: 3.42, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1119842708}
@@ -147671,9 +147671,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1119842708}
   - component: {fileID: 1119842712}
+  - component: {fileID: 1119842709}
   - component: {fileID: 1119842711}
   - component: {fileID: 1119842710}
-  - component: {fileID: 1119842709}
   - component: {fileID: 1119842713}
   m_Layer: 0
   m_Name: _dle 1
@@ -147706,10 +147706,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1119842707}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f6019f7ef064994d8d5324d44e1fd67, type: 3}
+  m_Script: {fileID: 11500000, guid: 402b663f392d8e34196382b2bf7adaba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 14
+  speed: 10
+  animator: {fileID: 1119842713}
+  facingRight: 1
 --- !u!50 &1119842710
 Rigidbody2D:
   serializedVersion: 4
