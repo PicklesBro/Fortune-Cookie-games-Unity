@@ -256,66 +256,6 @@ Transform:
   m_Father: {fileID: 539236583}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &341649399
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 341649400}
-  - component: {fileID: 341649401}
-  - component: {fileID: 341649402}
-  m_Layer: 0
-  m_Name: NewGroundCheck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &341649400
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341649399}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1119842708}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &341649401
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341649399}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.06, y: -0.33}
-  m_Size: {x: 0.13, y: 0.94}
-  m_Direction: 0
---- !u!114 &341649402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341649399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dfbd24f8b0e1cb4ca8940755ab9622b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &360089244
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +371,7 @@ GameObject:
   - component: {fileID: 375131100}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Grounded
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -147754,7 +147694,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 519420032}
-  - {fileID: 341649400}
   m_Father: {fileID: 766452144}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -147773,8 +147712,6 @@ MonoBehaviour:
   speed: 10
   animator: {fileID: 1119842713}
   facingRight: 1
-  grounded: 0
-  doubleJump: 2
 --- !u!50 &1119842710
 Rigidbody2D:
   serializedVersion: 4
@@ -147809,8 +147746,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.11, y: 0.04}
-  m_Size: {x: 0.83, y: 1.65625}
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.34375, y: 1.65625}
   m_Direction: 0
 --- !u!212 &1119842712
 SpriteRenderer:

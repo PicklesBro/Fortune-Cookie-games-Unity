@@ -7,9 +7,6 @@ public class Movement : MonoBehaviour
     public float speed = 10f;
     public Animator animator;
     public bool facingRight = true;
-    public bool grounded = false;
-    public float doubleJump = 2;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -36,21 +33,10 @@ public class Movement : MonoBehaviour
     }
     void Jump()
     {
-        if (Input.GetButtonDown("Jump") && grounded == true && doubleJump == 2)
+        if (Input.GetButtonDown("Jump"))
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 20f), ForceMode2D.Impulse);
-            doubleJump = 1;
-
-            // Double jump
-
         }
-
-        else if (Input.GetButtonDown("Jump") && doubleJump == 1)
-        {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 15f), ForceMode2D.Impulse);
-            doubleJump = 2;
-        }
-
     }
 
     void Flip()
